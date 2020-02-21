@@ -104,7 +104,7 @@ class BaseModifiers implements ILoader {
 		if ($flag) {
 			$flag = $this->converseFlags(array_slice(func_get_args(), 3));
 		}
-		$image->resize($width, $height, $flag);
+		$image->resize((int) $width, (int) $height, $flag);
 	}
 
 	/**
